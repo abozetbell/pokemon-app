@@ -4,9 +4,10 @@
 ```
 npm install
 ```
-#### if you have depency issue
+#### or if you have dependencies issue
+```
 npm install --legacy-peer-deps
-``
+```
 
 ### Compiles and hot-reloads for development
 ```
