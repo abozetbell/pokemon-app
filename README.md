@@ -4,7 +4,7 @@
 ```
 npm install
 ```
-#### or if you have dependencies issue
+### If you have dependencies issue
 ```
 npm install --legacy-peer-deps
 ```
