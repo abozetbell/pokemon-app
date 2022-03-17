@@ -6,7 +6,7 @@ npm install
 ```
 #### if you have depency issue
 npm install --legacy-peer-deps
-```
+``
 
 ### Compiles and hot-reloads for development
 ```
