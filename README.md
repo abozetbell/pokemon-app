@@ -13,3 +13,8 @@ npm install --legacy-peer-deps
 ```
 npm run serve
 ```
+
+### Go check the app
+```
+http://localhost:8080/
+```
