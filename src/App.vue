@@ -4,8 +4,8 @@
     <PokedexComponent :key="refreshComponent" v-if="isDiplayed" :maxItem="150" :itemPerPage="15" :firstLoadItems="50" nav="loadmore"/>
     <PokedexComponent :key="refreshComponent" v-if="!isDiplayed" :maxItem="150" :itemPerPage="30" nav="pagination"/>
     <div class="l-wrapper">
-        <ButtonComponent @click.native="isDiplayed = !isDiplayed; refreshComponent++" btnStyle="light" text="navigate by load more"/>
-        <ButtonComponent @click.native="isDiplayed = !isDiplayed; refreshComponent++" btnStyle="light" text="navigate by page"/>
+        <ButtonComponent @click.native="isDiplayed = !isDiplayed; refreshComponent++" btnStyle="light" text="navigate by load more" :disabled="isDiplayed"/>
+        <ButtonComponent @click.native="isDiplayed = !isDiplayed; refreshComponent++" btnStyle="light" text="navigate by page" :disabled="!isDiplayed"/>
     </div>
   </div>
 </template>
@@ -39,14 +39,14 @@ body {
   margin:80px 0 0 0;
 }
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: left;
-  color: black;
-  display:flex;
-  align-items: center;
-  flex-direction: column;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: left;
+    color: black;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
 }
 .l-wrapper {
     background-color: white;
