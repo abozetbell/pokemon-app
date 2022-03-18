@@ -69,8 +69,7 @@ export default {
             color: black;
         }
 
-        &--dark,
-        &--light {
+        &--dark {
           &:disabled,
           &[disabled] {
               background-color: darkgrey;
@@ -79,6 +78,21 @@ export default {
               color: white;
               cursor: auto;
             }
+        }
+
+        &--light {
+          &:disabled,
+          &[disabled] {
+              color: darkgrey;
+              cursor: auto;
+            }
+        }
+
+        &--light {
+          &:disabled,
+          &[disabled] {
+
+          }
         }
     }
 </style>
